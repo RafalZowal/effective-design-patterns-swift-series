@@ -11,7 +11,7 @@ You are free to:
 Under the following terms:
 - Attribution — You must give appropriate credit, link to the original content, and indicate if changes were made.  
   Preferred attribution format:  
-  “Based on the work by Rafal Zowal — Effective Design Patterns Series https://medium.com/@rafal.zowal1985”
+  “Based on the work by Rafal Zowal — Effective Design Patterns Series https://medium.com/@rafal.zowal1985
   
 - NonCommercial — You may not use this material for commercial purposes without prior written permission from the author.
 
