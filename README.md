@@ -157,6 +157,18 @@ final class SearchViewModel: ObservableObject {
 }
 ```
 
+By default, the Environment file already comes with:
+
+```swift
+baseURL = "https://api.flickr.com/services"
+```
+So you're good to go right out of the box if you're testing with Flickr. But hey — flexibility is the name of the design pattern game. You can override this in your app layer if needed.
+
+**Tip:** Try to check the code when you want to try to execute:
+```swift
+NetworkSetupCommand(configs: <#T##[any Config]?#>, enviroment: <#T##EnvironmentConfiguration#>, useCache: <#T##Bool#>).execute()
+```
+
 ---
 
 ### Summary
