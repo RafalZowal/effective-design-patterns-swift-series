@@ -31,13 +31,13 @@ Here’s the full roadmap:
 
 | Part | Title & Description                                                                                                                      | Link                |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| 1    | **Effective Use of Design Patterns: Best Practices**<br>Visitor, Observer, Command, Interceptor, Factory, Builder in one whirlwind tour. | 👉 [Read Part 1](#) |
-| 2    | **Factory Pattern: Assembly Lines for Objects**<br>Because nobody hand-crafts every bolt.                                                | 👉 [Read Part 2](#) |
-| 3    | **Builder Pattern: Crafting Complex Structures Brick by Brick**<br>From Lego castles to enterprise apps.                                 | 👉 [Read Part 3](#) |
-| 4    | **Interceptor Pattern: Sneaking Logic into the Pipeline**<br>Your silent middleware ninjas.                                              | 👉 [Read Part 4](#) |
-| 5    | **Singleton & Facade: VIP Access and Red-Carpet APIs**<br>Because sometimes one instance really is enough.                               | 👉 [Read Part 5](#) |
-| 6    | **Prototype Pattern: Cloning Made Cool**<br>Copy, paste, conquer.                                                                        | 👉 [Read Part 6](#) |
-| 7    | **Builder Pattern Reloaded: Architectural Upgrades**<br>Blueprints, but with power tools.                                                | 👉 [Read Part 7](#) |
+| 1    | **Effective Use of Design Patterns: Best Practices**<br>Visitor, Observer, Command, Interceptor, Factory, Builder in one whirlwind tour. | 👉 [Read Part 1](https://medium.com/@rafal.zowal1985/effective-use-of-design-patterns-in-software-development-best-practices-part-1-8759c67af217) |
+| 2    | **Factory Pattern: Assembly Lines for Objects**<br>Because nobody hand-crafts every bolt.                                                | 👉 [Read Part 2](https://medium.com/@rafal.zowal1985/effective-use-of-design-patterns-in-software-development-exploring-the-visitor-pattern-part-2-c0e6fbdcf05f) |
+| 3    | **Builder Pattern: Crafting Complex Structures Brick by Brick**<br>From Lego castles to enterprise apps.                                 | 👉 [Read Part 3](https://medium.com/@rafal.zowal1985/dancing-with-code-a-spirited-dive-into-the-observer-pattern-software-design-patterns-d05623692812) |
+| 4    | **Interceptor Pattern: Sneaking Logic into the Pipeline**<br>Your silent middleware ninjas.                                              | 👉 [Read Part 4](https://medium.com/@rafal.zowal1985/conquering-code-the-command-pattern-decoded-essential-design-patterns-in-software-development-e824f22a5ce8) |
+| 5    | **Singleton & Facade: VIP Access and Red-Carpet APIs**<br>Because sometimes one instance really is enough.                               | 👉 [Read Part 5](https://medium.com/illumination/boost-your-coding-efficiency-by-145-with-the-interceptor-pattern-a-developers-guide-part-5-fb266ba54a4a) |
+| 6    | **Prototype Pattern: Cloning Made Cool**<br>Copy, paste, conquer.                                                                        | 👉 [Read Part 6](https://medium.com/@rafal.zowal1985/part-6-factory-pattern-3-times-more-productivity-boost-with-advanced-technique-9444153d05aa) |
+| 7    | **Builder Pattern Reloaded: Architectural Upgrades**<br>Blueprints, but with power tools.                                                | 👉 [Read Part 7](https://medium.com/@rafal.zowal1985/mastering-builder-pattern-guide-60c182f9cd61) |
 | 8    | **Demystifying Dependency Injection - The Art of Decoupling**<br>You're here — grab a refill and keep coding!                            | 👉 [Read Part 8](#) |
 
 *Replace `#` with the actual URLs of your articles.*
