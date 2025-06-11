@@ -52,6 +52,124 @@ Here’s the full roadmap:
 
 ---
 
+## 🚀 How to Use This Code: Dependency Injection Example
+
+This project shows a fun, practical way to implement **Dependency Injection** in Swift, focusing on clean architecture and testability.
+
+Here’s a quick guide to get started with the example:
+
+---
+
+### 1. Create your **AppDependencies** container
+
+This struct holds all your configuration classes that register dependencies for your app.
+
+```swift
+import Foundation
+import Core
+
+struct AppDependencies {
+    static let configs: [Config] = [
+        SearchRepositoryConfig(),  // Add all your dependency configs here
+    ]
+}
+```
+
+---
+
+### 2. Configure dependencies in your **AppDelegate**
+
+Inside your app’s `AppDelegate`, call the global injector and pass your configs to register services at launch.
+
+```swift
+import Foundation
+import SwiftUI
+import Core
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        GlobalContext.shared.configure(AppDependencies.configs) { }
+        return true
+    }
+}
+```
+
+---
+
+### 3. Define each dependency with a Config conforming struct
+
+For example, the Search Repository config maps the protocol to the concrete implementation:
+
+```swift
+import Foundation
+import Core
+
+struct SearchRepositoryConfig: Config {
+    func configure(_ injector: Injectorable) {
+        injector.map(SearchRepositorible.self, SearchRepository())
+    }
+}
+```
+
+---
+
+### 4. Implement the actual repository following your domain logic
+
+```swift
+import Foundation
+import Network
+
+protocol SearchRepositorible {
+    func searchPhotos(search: String, page: String?) -> Observer<SearchResponse>
+}
+
+final class SearchRepository: SearchRepositorible  {
+    func searchPhotos(search: String, page: String?) -> Observer<SearchResponse> {
+        let path = "/rest"
+        let request = RequestDataBuilder()
+            .make(.path(path))
+            .make(.method(.get))
+            .make(.params(generateParams(search, page)))
+        
+        return ObserverFactory().executeRequest(request)
+    }
+}
+```
+
+---
+
+### 5. Use injected dependencies in your ViewModel
+
+Inject your dependency with the `@Inject` property wrapper and use it like this:
+
+```swift
+final class SearchViewModel: ObservableObject {
+    @Inject private var repository: SearchRepositorible?
+
+    private func fetchPhotos(_ search: String) {
+        repository?.searchPhotos(search: search).complete { [weak self] result in
+            if case let Result.success(response) = result {
+                self?.photos = response?.photos ?? Photos.Empty
+            }
+            self?.searching = false
+        }
+    }
+}
+```
+
+---
+
+### Summary
+
+* **Configure** your services in `AppDependencies`
+* **Register** them in `AppDelegate`
+* **Map** interfaces to implementations with Config objects
+* **Inject** dependencies into consumers with `@Inject`
+* **Use** them freely — decoupled, clean, and testable
+
+
+--
+
 ## Feedback and Contributions
 
 This is mostly a personal learning project, but I’m always happy to hear what you think or see your improvements. Feel free to open issues or pull requests!
