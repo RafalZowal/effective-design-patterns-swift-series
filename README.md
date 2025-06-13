@@ -38,7 +38,7 @@ Here’s the full roadmap:
 | 5    | **Diving into the Interceptor Pattern**<br>Middleware magic, ninja style.                    | 👉 [Read Part 5](https://medium.com/illumination/boost-your-coding-efficiency-by-145-with-the-interceptor-pattern-a-developers-guide-part-5-fb266ba54a4a)        |
 | 6    | **Crafting with the Factory Pattern**<br>Because not everything needs to be handcrafted.     | 👉 [Read Part 6](https://medium.com/@rafal.zowal1985/part-6-factory-pattern-3-times-more-productivity-boost-with-advanced-technique-9444153d05aa)                |
 | 7    | **Building with the Builder Pattern**<br>Blueprints meet code — your structures made simple. | 👉 [Read Part 7](https://medium.com/@rafal.zowal1985/mastering-builder-pattern-guide-60c182f9cd61)                                                               |
-| 8    | **Dependency Injection: The Art of Decoupling**<br>Coming soon — unplug your dependencies.   | 🔜 *Coming Soon*                                                                                                                                                 |
+| 8    | **Dependency Injection: The Art of Decoupling**<br>Coming soon — unplug your dependencies.   | 👉 [Read Part 8](https://medium.com/gitconnected/part-8-demystifying-dependency-injection-the-art-of-decoupling-d2646012680f)                                                                                                                                                |
 
 
 ---
